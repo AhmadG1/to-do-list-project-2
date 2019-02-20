@@ -1,3 +1,22 @@
+.crossed {
+  text-decoration: line-through;
+  padding-left: 50px;
+  font-family: 'B612 Mono', monospace;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.false {
+  padding-left: 100px;
+  font-family: 'B612 Mono', monospace;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+span {
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
 }
@@ -31,3 +50,76 @@
     transform: rotate(360deg);
   }
 }
+
+.bar {
+	width: 84%;
+  padding: 12px 20px;
+  margin: 8px 14px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input:focus {
+  border: 3px solid #555;
+}
+
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 9px 14px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+  }
+
+  .button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #C6C6BF;
+  }
+
+  .button1:hover {
+    background-color: #C6C6BF;
+  }
+
+header {
+  font-family: 'Merienda', cursive;
+  font-size: 60px;
+  padding: 10px 30px;
+  font-variant: small-caps;
+  color: whitesmoke;
+  text-shadow: 2px 2px #070202
+}
+
+.item-checkbox {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 20px;
+  border-width: 3px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.item-checkbox input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.item-checkbox:hover {
+  background-color: #ccc;
+}
+
+
+
+
+
