@@ -18,15 +18,6 @@ class ListItem extends Component {
         }
     }
 
-    // Copying to a new array to remove a checked task item.
-    // removeItem() {
-    //     this.props.removeItem(this.props.index)
-    //     console.log(this.state.tasks);
-    //     const newList = this.state.tasks.splice(0);
-    //     this.setState({tasks:newList})
-    // }
-      
-
     render() {
         return (
             <div>

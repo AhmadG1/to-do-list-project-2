@@ -55,14 +55,16 @@ class App extends Component {
 
   // Copying to a new array to remove a checked task item.
   removeItem = (index) => {
-    console.log(this.state.tasks , index);
+    // Copy tasks list to a new array.
     const copy = this.state.tasks.slice(0)
+    // Delete one of the index from the new copy array.
     copy.splice(index, 1);
+    // Set the state with new copy.
     this.setState({ tasks: copy })
-}
+  }
 
   render() {
-    // Declare the item list showen in the screen after submiting a task.
+    // Declare functions from the child to the parant.
     const ItemList = this.state.tasks.map((task, index) => {
       return <ListItem task={task} index={index} removeItem={this.removeItem} />;
     })
@@ -70,10 +72,10 @@ class App extends Component {
       <div>
         <header>To Do List</header>
         <form onSubmit={this.submitItem}>
-          <input placeholder="Task" onChange={this.updateItem} value={this.state.formData.Task} class='bar'/>
-          <button type="submit" class='button1'> Add Task </button>
+          <input placeholder="Task" onChange={this.updateItem} value={this.state.formData.Task} className='bar' />
+          <button type="submit" className='button1'> Add Task </button>
         </form>
-        {ItemList} 
+        {ItemList}
         <button type="button" onClick={this.clearTasks.bind(this)} className='button1'>Clear</button>
         <style>{'body { background-color: #0a85aa; }'}</style>
       </div>
